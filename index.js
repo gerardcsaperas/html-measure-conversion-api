@@ -3,7 +3,7 @@ const cors = require('cors')
 const helmet = require('helmet')
 const convertRouter = require('./src/routes/convert.routes');
 
-const PORT = 5002;
+const PORT = process.env.PORT || 5002;
 
 const app = express();
 
